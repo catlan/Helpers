@@ -24,8 +24,6 @@
 
 @implementation ATMailHelper
 
-SYNTHESIZE_SINGLETON_FOR_CLASS(ATMailHelper, MailHelper)
-
 + (void)mailHTMLString:(NSString *)string
 			   baseURL:(NSURL *)URL
 			   subject:(NSString *)aSubject
