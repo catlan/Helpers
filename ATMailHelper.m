@@ -3,7 +3,7 @@
 //  AP
 //
 //  Created by Christopher Atlan on 25.12.09.
-//  Copyright 2009 __MyCompanyName__. All rights reserved.
+//  Copyright 2009 Christopher Atlan. All rights reserved.
 //
 
 #import "ATMailHelper.h"
@@ -74,7 +74,7 @@
 						forKeyword:'url '];
 	
 	NSString *path = [[NSWorkspace sharedWorkspace] absolutePathForAppBundleWithIdentifier:MAIL_BUNDLE_ID];
-	NSURL *mailURL = [NSURL URLWithString:path];
+	NSURL *mailURL = [NSURL fileURLWithString:path];
 	NSDictionary *confDict = [NSDictionary dictionaryWithObjectsAndKeys:
 							  appleEvent, NSWorkspaceLaunchConfigurationAppleEvent,
 							  nil];
